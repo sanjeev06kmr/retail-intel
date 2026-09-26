@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/batches/{{batchId}}/apply"
+method: POST
+order: 3000

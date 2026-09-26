@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{baseUrl}}/api/batches/products"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    apply{
+      "items": [
+        {
+          "sku": "BATCH-001",
+          "name": "Running Shoes",
+          "description": "Test running shoes",
+          "category": "Footwear",
+          "price": 79.99,
+          "status": "ACTIVE"
+        },
+        {
+          "sku": "BATCH-002",
+          "name": "Sports Jacket",
+          "description": "Test sports jacket",
+          "category": "Clothing",
+          "price": 59.99,
+          "status": "ACTIVE"
+        }
+      ]
+    }
+order: 1000

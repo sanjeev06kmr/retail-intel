@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/api/products/{{productId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Wireless Headphones Pro",
+      "description": "Updated headphones",
+      "sku": "EX-001",
+      "category": "Electronics",
+      "price": 119.99,
+      "status": "ACTIVE",
+      "version": 0
+    }
+order: 4000

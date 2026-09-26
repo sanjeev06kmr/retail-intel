@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: retail-intel-postgres
+    environment:
+      POSTGRES_DB: retailintel
+      POSTGRES_USER: retailintel
+      POSTGRES_PASSWORD: retailintel
+    ports:
+      - "5432:5432"
+    volumes:
+      - retail-intel-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  retail-intel-postgres-data:

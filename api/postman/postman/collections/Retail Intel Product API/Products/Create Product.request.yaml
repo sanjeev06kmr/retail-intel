@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/api/products"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Example Product",
+      "description": "Sample product created via Postman",
+      "sku": "EX-001",
+      "category": "Electronics",
+      "price": 19.99,
+      "status": "ACTIVE"
+    }
+order: 1000

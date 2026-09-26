@@ -1,0 +1,6 @@
+$kind: collection
+description: Postman collection for Product and Batch endpoints.
+variables:
+  baseUrl: http://localhost:8080
+  productId: "1"
+  batchId: "1"
